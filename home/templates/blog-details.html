@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block css %}
+    
+{% endblock css %}
+    
+
+
+{% block body %}
+<main>
+
+    <!-- blog details area start  -->
+    <section class="blog-details-area">
+      <div class="container">
+        <div class="blog-details-area-inner">
+          <div class="section-header">
+            <div class="section-title-wrapper">
+              <div class="title-wrapper">
+                <h1 class="section-title large has_fade_anim">{{data2.h1}} </h1>
+              </div>
+            </div>
+            <div class="meta-box has_fade_anim">
+              <ul>
+                <li>
+                  <span class="number">3,20 +</span>
+                  <p class="text">Comments</p>
+                </li>
+                <li>
+                  <span class="number">20,511 +</span>
+                  <p class="text">Likes</p>
+                </li>
+                <li>
+                  <span class="number">{{data2.published}}</span>
+                  <p class="text">Date</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="blog-thumb overflow-hidden">
+            <img class="w-100" data-speed="0.8" src="{{data2.image.url}}" alt="image">
+          </div>
+          <div class="blogdetails__wrapper">
+            <div class="blogdetails-contentleft">
+              <ul class="blogdetails-overview dark-overview has_fade_anim" data-fade-from="left">
+                <li>
+                  <i class="fa-solid fa-chart-simple"></i>
+                  <span>247 <br>
+                    Views </span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-share-nodes"></i>
+                  <span>14 <br>
+                    Shares</span>
+                </li>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+
+            <div class="blogdetails-contentright">
+
+              <article class="blog-details-fullBody">
+                
+                <div class="text-wrapper">
+                  <p class="text has_fade_anim"> {{data2.content|safe}}</p>
+                </div>
+                
+                
+                
+               
+                
+                <div class="tagswrap has_fade_anim">
+                  <ul class="tags">
+                    <li><span>Tags:</span></li>
+                    <li><a href="#">design,</a></li>
+                    <li><a href="#">figma,</a></li>
+                    <li><a href="#">update</a></li>
+                  </ul>
+                </div>
+              </article>
+
+
+              <div class="commentform section-spacing-top has_fade_anim">
+                <h2 class="section-title has_fade_anim">Write a comment</h2>
+
+                <div class="contact-wrap">
+                  <form method="POST" action="">
+                    {% csrf_token %}
+                    <div class="contact-formwrap">
+                        <div class="contact-formfield">
+                            <input type="text" name="name" id="Name" placeholder="Name*" required>
+                        </div>
+                        <div class="contact-formfield">
+                            <input type="email" name="email" id="Email" placeholder="Email*" required>
+                        </div>
+                        <div class="contact-formfield">
+                            <input type="text" name="number" id="Phone" placeholder="Phone">
+                        </div>
+                        <div class="contact-formfield messages">
+                              <input type="text"name="message" id="Messages" placeholder="Messages*" required>
+                        </div>
+                    </div>
+                    <div class="submit-btn">
+                        <button type="submit" class="wc-btn wc-btn-primary btn-text-flip">
+                            <span data-text="Submit Comment">Submit Comment</span>
+                        </button>
+                    </div>
+                </form>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog details area end  -->
+
+    <!-- blog area start  -->
+    <section class="blog-area">
+      <div class="container">
+        <div class="blog-area-inner section-spacing">
+          <div class="section-content">
+            <div class="section-title-wrapper">
+              <div class="title-wrapper">
+                <h2 class="section-title has_fade_anim">Related articles</h2>
+              </div>
+            </div>
+          </div>
+          <div class="blogs-wrapper-box">
+            <div class="blogs-wrapper has_fade_anim">
+              {% for ie in data  %}
+              <a href="{% url 'home:blogsd' ie.slug %}">
+                <div class="blog-box">
+                  <div class="thumb">
+                    <img src="{{ie.image.url}}" alt="image">
+                  </div>
+                  <div class="content">
+                    <span class="number">{{ie.published}}</span>
+                    <h3 class="title">{{ie.h1}}</h3>
+                    <span class="icon"><i class="fa-solid fa-arrow-right"></i></span>
+                  </div>
+                </div>
+              </a>
+              {% endfor %}
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog area end  -->
+
+    <!-- cta area start  -->
+    <section class="cta-area">
+      <div class="container">
+        <div class="cta-area-inner section-spacing">
+          <div class="section-header">
+            <div class="section-title-wrapper">
+              <div class="subtitle-wrapper">
+                <span class="section-subtitle has_fade_anim">🖐️ Hello
+                  <img class="show-light" src="{% static 'imgs/shape/img-s-6.webp' %}" alt="image">
+                  <img class="show-dark" src="{% static 'imgs/shape/img-s-6-light.webp' %}" alt="image">
+                </span>
+              </div>
+              <div class="title-wrapper">
+                <h2 class="section-title has_fade_anim">Let’s Talk
+                  with us</h2>
+              </div>
+            </div>
+            <div class="btn-wrapper has_fade_anim">
+              <a href="mailto:hello@example.com" class="wc-btn wc-btn-underline">hello@example.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- cta area end  -->
+
+</main>
+
+{% endblock body %}
+    
+
+
+{% block js %}
+
+
+    
+{% endblock js %}
+    

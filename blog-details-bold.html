@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Arolax HTML5 Template">
+
+  <title>Arolax Blog Details</title>
+
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/x-icon" href="assets/imgs/logo/favicon.png">
+
+
+
+
+
+  <!-- All CSS files -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/progressbar.css">
+  <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/master-blog-details-bold.css">
+
+
+</head>
+
+
+<body class="font-heading-teko-bold">
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="container" class="container-preloader">
+      <div class="animation-preloader">
+        <div class="spinner"></div>
+        <div class="txt-loading">
+          <span data-text="A" class="characters">A</span>
+          <span data-text="R" class="characters">R</span>
+          <span data-text="O" class="characters">O</span>
+          <span data-text="L" class="characters">L</span>
+          <span data-text="A" class="characters">A</span>
+          <span data-text="X" class="characters">X</span>
+        </div>
+      </div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+  </div>
+
+  <!-- Cursor Animation -->
+  <div class="cursor1"></div>
+  <div class="cursor2"></div>
+
+  <!-- Sroll to top -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+    </svg>
+  </div>
+
+  <!-- Switcher Area Start -->
+  <div class="switcher__area">
+    <div class="switcher__icon">
+      <button id="switcher_open"><i class="fa-solid fa-gear"></i></button>
+      <button id="switcher_close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="switcher__items">
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">mode</p>
+        </div>
+        <div class="switcher__btn mode-type wc-col-2">
+          <button class="active" data-mode="light">light</button>
+          <button data-mode="dark">dark</button>
+        </div>
+      </div>
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">Language Support</p>
+        </div>
+        <div class="switcher__btn lang_dir wc-col-2">
+          <button class="active" data-mode="ltr">LTR</button>
+          <button data-mode="rtl">RTL</button>
+        </div>
+      </div>
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">Layout</p>
+        </div>
+        <div class="switcher__btn layout-type wc-col-2">
+          <button class="active" data-mode="full-width">Full Width</button>
+          <button data-mode="box-layout">Box Layout</button>
+        </div>
+      </div>
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">Cursor</p>
+        </div>
+        <div class="switcher__btn">
+          <select name="cursor-style" id="cursor_style">
+            <option value="1">default</option>
+            <option selected value="2">animated</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Switcher Area End -->
+
+  <!-- offcanvas start  -->
+  <div class="offcanvas-3__area">
+    <div class="offcanvas-3__inner">
+      <div class="offcanvas-3__meta-wrapper">
+        <div class="">
+          <button id="close_offcanvas" class="close-button close-offcanvas" onclick="hideCanvas3()">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="">
+          <div class="offcanvas-3__meta mb-145 d-none d-md-block">
+            <ul>
+              <li><a href="tel:+2-352698102" class="unnerline"><u>+2-352 698 102</u></a></li>
+              <li><a href="mailto:contact@me.com">contact@me.com</a></li>
+              <li><a href="">27 Division St, <br>
+                  New York, NY 10002, USA</a></li>
+            </ul>
+          </div>
+          <div class="offcanvas-3__social d-none d-md-block">
+            <p class="title">Follow Me</p>
+            <div class="offcanvas-3__social-links">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-dribbble"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-3__menu-wrapper">
+        <nav class="nav-menu offcanvas-3__menu">
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="services.html">services</a></li>
+            <li><a href="service-details.html">service details</a></li>
+            <li><a href="works.html">projects</a></li>
+            <li><a href="work-details.html">project details</a></li>
+            <li><a href="team.html">team</a></li>
+            <li><a href="team-details.html">team details</a></li>
+            <li><a href="career.html">career</a></li>
+            <li><a href="career-details.html">career details</a></li>
+            <li><a href="faq.html">faq</a></li>
+            <li><a href="404.html">404 page</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="blog-details.html">blog details</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- offcanvas end  -->
+
+
+  <!-- search modal start -->
+  <div class="modal fade" id="search-template" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="search-template" aria-hidden="true">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form action="#" class="form-search">
+            <input type="text" placeholder="Search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- search modal end -->
+
+  <!-- Header area start -->
+  <header class="header-area">
+    <div class="container large">
+      <div class="header-area__inner">
+        <div class="header__logo">
+          <a href="#">
+            <img class="show-light" src="assets/imgs/logo/logo.png" alt="Site Logo">
+            <img class="show-dark" src="assets/imgs/logo/logo-light.png" alt="Site Logo">
+          </a>
+        </div>
+        <div class="header__nav pos-center">
+          <nav class="main-menu">
+            <ul>
+              <li class="menu-item-has-children">
+                <a href="#">Demos</a>
+                <ul class="dp-menu col-2">
+                  <li><a href="branding-agency.html">Branding Agency</a></li>
+                  <li><a href="web-agency.html">Web Agency</a></li>
+                  <li><a href="seo-agency.html">SEO Agency</a></li>
+                  <li><a href="design-studio.html">Design Agency</a></li>
+                  <li><a href="video-production.html">Video Agency</a></li>
+                  <li><a href="ai-agency.html">AI Agency</a></li>
+                  <li><a href="creative-agency-classic.html">Creative Agency Classic</a></li>
+                  <li><a href="marketing-agency.html">Marketing Agency</a></li>
+                  <li><a href="corporate-agency.html">Corporate Agency</a></li>
+                  <li><a href="startup-agency.html">Startup Agency</a></li>
+                  <li><a href="modern-agency.html">Modern Agency</a></li>
+                  <li><a href="photography-studio.html">Photography Agency</a></li>
+                  <li><a href="creative-agency.html">Creative Agency</a></li>
+                  <li><a href="digital-agency.html">Digital Agency</a></li>
+                </ul>
+              </li>
+              <li><a href="about.html">about</a></li>
+              <li class="menu-item-has-children">
+                <a href="#">portfolio</a>
+                <ul class="dp-menu">
+                  <li><a href="portfolio-carousel.html">Portfolio Carousel</a></li>
+                  <li><a href="portfolio-material.html">Portfolio Material</a></li>
+                  <li><a href="portfolio-slicer.html">Portfolio Slicer</a></li>
+                  <li><a href="portfolio-spring.html">Portfolio Spring</a></li>
+                </ul>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#">Pages</a>
+                <ul class="dp-menu">
+                  <li class="menu-item-has-children">
+                    <a href="#">service pages</a>
+                    <ul>
+                      <li><a href="services.html">services</a></li>
+                      <li><a href="service-details.html">service details</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a href="#">project pages</a>
+                    <ul>
+                      <li><a href="works.html">project</a></li>
+                      <li><a href="work-details.html">project details</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a href="#">team pages</a>
+                    <ul>
+                      <li><a href="team.html">team</a></li>
+                      <li><a href="team-details.html">team details</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a href="#">career pages</a>
+                    <ul>
+                      <li><a href="career.html">career</a></li>
+                      <li><a href="career-details.html">career details</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="faq.html">faq</a></li>
+                  <li><a href="404.html">404 page</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">blog</a>
+                <ul class="dp-menu">
+                  <li><a href="blog.html">blog</a></li>
+                  <li><a href="blog-details.html">blog details</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__button">
+          <a class="wc-btn wc-btn-primary btn-text-flip" href="contact.html"><span data-text="Get started">Get
+              started</span></a>
+        </div>
+        <div class="header__navicon d-xl-none">
+          <button onclick="showCanvas3()" class="open-offcanvas">
+            <i class="fa-solid fa-bars"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header area end -->
+
+  <div class="has-smooth" id="has_smooth"></div>
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <div class="body-wrapper body-corporate-agency">
+
+        <!-- overlay switcher close  -->
+        <div class="overlay-switcher-close"></div>
+
+        <main>
+
+          <!-- blog details area start  -->
+          <section class="blog-details-area">
+            <div class="container">
+              <div class="blog-details-area-inner">
+                <div class="section-header">
+                  <div class="section-title-wrapper">
+                    <div class="title-wrapper">
+                      <h1 class="section-title large has_fade_anim">Donate your design for newest designer to try better
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="meta-box has_fade_anim">
+                    <ul>
+                      <li>
+                        <span class="number">3,20 +</span>
+                        <p class="text">Comments</p>
+                      </li>
+                      <li>
+                        <span class="number">20,511 +</span>
+                        <p class="text">Likes</p>
+                      </li>
+                      <li>
+                        <span class="number">01</span>
+                        <p class="text">November</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="blog-thumb overflow-hidden">
+                  <img class="w-100" data-speed="0.8" src="assets/imgs/blog/img-s-26.webp" alt="image">
+                </div>
+                <div class="blogdetails__wrapper">
+                  <div class="blogdetails-contentleft">
+                    <ul class="blogdetails-overview dark-overview has_fade_anim" data-fade-from="left">
+                      <li>
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span>247 <br>
+                          Views </span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-share-nodes"></i>
+                        <span>14 <br>
+                          Shares</span>
+                      </li>
+                      <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+
+                  <div class="blogdetails-contentright">
+
+                    <article class="blog-details-fullBody">
+                      <div class="blog-details-quote has_fade_anim">
+                        <div class="shape-1">
+                          <img src="assets/imgs/icon/quote-11.webp" alt="quote">
+                        </div>
+                        <div class="icon">
+                          <img src="assets/imgs/icon/quote-10.webp" alt="quote">
+                        </div>
+                        <div class="blog-details-quote-info">
+                          <div class="blog-details-quote-text">
+                            <p class="text">Comfortable full leather lining eye-catching unique detail to the toe low
+                              ‘cut-away’ sides clean and sleek harmony.</p>
+                          </div>
+                          <div class="blog-details-quote-author">
+                            <span class="name has-left-line">Ceyhan Özçivit</span>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="text-wrapper">
+                        <p class="text has_fade_anim">We love to bring designs to life as a developer, and I aim to do
+                          this using
+                          whatever front end tools aren't necessary. my preferred tools are more moderns JavaScript
+                          libraries like React.js but I like use whatever best for the websites needs. There are several
+                          reasons why a business would consider a rebrand and it doesn’t necessarily mean the business
+                          has been unsuccessful.</p>
+                        <p class="text has_fade_anim">But in order that you may see whence all this born error of those
+                          who accuse
+                          pleasure and
+                          praise pain will open the whole matter, and explain the very things which were said by that
+                          discoverer of truth and, as it’s were, the architect of a happy life.</p>
+                      </div>
+                      <div class="thumb overflow-hidden has_fade_anim">
+                        <img class="w-100" data-speed="0.8" src="assets/imgs/blog/img-s-27.webp" alt="image">
+                      </div>
+                      <div class="content-block">
+                        <h2 class="content-title has_fade_anim">Research & strategy</h2>
+                        <div class="text-wrapper">
+                          <p class="text has_fade_anim">We love to bring designs to life as a developer & I aim to do
+                            this using
+                            whatever front end tools necessary my preferred tools are more modern JavaScript libraries
+                            like React.js but I like to use whatever is best for the website need. there are several
+                            reason why a business would consider a rebrands doesn’t necessarily mean the business has
+                            been unsuccessful.</p>
+                        </div>
+                      </div>
+                      <div class="content-block">
+                        <h2 class="content-title has_fade_anim">WorkFlow</h2>
+                        <div class="text-wrapper">
+                          <p class="text has_fade_anim">Always ready to push the boundaries, especially when it comes to
+                            our own
+                            platform, Our analytical eye create a site that was visually engaging and also optimised for
+                            maximum performance. It also perfectly reflects the journey to help it tell a story to
+                            increase its understanding and drive action. To create a site that was visually engaging for
+                            maximum performance.</p>
+                        </div>
+                      </div>
+                      <div class="details-service has_fade_anim">
+                        <ul>
+                          <li><span>+</span>Brand Development</li>
+                          <li><span>+</span>UX/UI Design</li>
+                          <li><span>+</span>Front-end Development</li>
+                          <li><span>+</span>Copywriting</li>
+                          <li><span>+</span>Shopify Development</li>
+                        </ul>
+                      </div>
+                      <div class="content-block">
+                        <h2 class="content-title has_fade_anim">WorkFrame</h2>
+                        <div class="text-wrapper">
+                          <p class="text has_fade_anim">Just like other pseudo-elements and pseudo-class selectors,
+                            :not() can be
+                            chained with other pseudon classes and pseudo-elements. For example, the following will add
+                            a “New!” word to list items that do not have a .old class name, using the ::after
+                            pseudo-element:</p>
+                        </div>
+                      </div>
+                      <div class="thumb overflow-hidden">
+                        <img class="w-100" data-speed="0.8" src="assets/imgs/blog/img-s-28.webp" alt="image">
+                      </div>
+                      <div class="tagswrap has_fade_anim">
+                        <ul class="tags">
+                          <li><span>Tags:</span></li>
+                          <li><a href="#">design,</a></li>
+                          <li><a href="#">figma,</a></li>
+                          <li><a href="#">update</a></li>
+                        </ul>
+                      </div>
+                    </article>
+
+
+                    <div class="commentform section-spacing-top has_fade_anim">
+                      <h2 class="section-title has_fade_anim">Write a comment</h2>
+
+                      <div class="contact-wrap">
+                        <form action="#">
+                          <div class="contact-formwrap">
+                            <div class="contact-formfield">
+                              <input type="text" name="Name" id="Name" placeholder="Name*">
+                            </div>
+                            <div class="contact-formfield">
+                              <input type="text" name="Email" id="Email" placeholder="Email*">
+                            </div>
+                            <div class="contact-formfield">
+                              <input type="text" name="Phone" id="Phone" placeholder="Phone">
+                            </div>
+                            <div class="contact-formfield">
+                              <input type="text" name="Subject" id="Subject" placeholder="Subject*">
+                            </div>
+                            <div class="contact-formfield messages">
+                              <input type="text" name="Messages" id="Messages" placeholder="Messages*">
+                            </div>
+                          </div>
+                          <div class="submit-btn">
+                            <button type="submit" class="wc-btn wc-btn-primary btn-text-flip"><span
+                                data-text="Submit Comment">Submit Comment</span></button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- blog details area end  -->
+
+          <!-- blog area start  -->
+          <section class="blog-area">
+            <div class="container">
+              <div class="blog-area-inner section-spacing">
+                <div class="section-content">
+                  <div class="section-title-wrapper">
+                    <div class="title-wrapper">
+                      <h2 class="section-title has_fade_anim">Related articles</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="blogs-wrapper-box">
+                  <div class="blogs-wrapper has_fade_anim">
+                    <a href="blog-details.html">
+                      <div class="blog-box">
+                        <div class="thumb">
+                          <img src="assets/imgs/blog/img-s-20.webp" alt="image">
+                        </div>
+                        <div class="content">
+                          <span class="number">01</span>
+                          <h3 class="title">Business <br>
+                            consultation</h3>
+                          <span class="icon"><i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="blog-details.html">
+                      <div class="blog-box">
+                        <div class="thumb">
+                          <img src="assets/imgs/blog/img-s-21.webp" alt="image">
+                        </div>
+                        <div class="content">
+                          <span class="number">02</span>
+                          <h3 class="title">Market research <br>
+                            & strategy</h3>
+                          <span class="icon"><i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="blog-details.html">
+                      <div class="blog-box">
+                        <div class="thumb">
+                          <img src="assets/imgs/blog/img-s-22.webp" alt="image">
+                        </div>
+                        <div class="content">
+                          <span class="number">03</span>
+                          <h3 class="title">Building quality <br>
+                            sustainable</h3>
+                          <span class="icon"><i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- blog area end  -->
+
+          <!-- cta area start  -->
+          <section class="cta-area">
+            <div class="container">
+              <div class="cta-area-inner section-spacing">
+                <div class="section-header">
+                  <div class="section-title-wrapper">
+                    <div class="subtitle-wrapper">
+                      <span class="section-subtitle has_fade_anim">🖐️ Hello
+                        <img class="show-light" src="assets/imgs/shape/img-s-6.webp" alt="image">
+                        <img class="show-dark" src="assets/imgs/shape/img-s-6-light.webp" alt="image">
+                      </span>
+                    </div>
+                    <div class="title-wrapper">
+                      <h2 class="section-title has_fade_anim">Let’s Talk
+                        with us</h2>
+                    </div>
+                  </div>
+                  <div class="btn-wrapper has_fade_anim">
+                    <a href="mailto:hello@example.com" class="wc-btn wc-btn-underline">hello@example.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- cta area end  -->
+
+        </main>
+
+        <!-- footer area start  -->
+        <footer class="footer-area">
+          <div class="container large">
+            <div class="copyright-area-inner">
+              <div class="copyright-text">
+                <p class="text">© 2024-25 <a href="https://themeforest.net/user/crowdytheme"
+                    target="_blank">crowdyTheme</a> Agency</p>
+              </div>
+              <ul class="footer-nav-list">
+                <li><a href="#">Agency</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms & condition</a></li>
+              </ul>
+              <ul class="social-links">
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+        <!-- footer area end  -->
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- All JS files -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/progressbar.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollSmoother.min.js"></script>
+  <script src="assets/js/ScrollToPlugin.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/SplitText.min.js"></script>
+  <script src="assets/js/jquery.meanmenu.min.js"></script>
+  <script src="assets/js/backToTop.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/error-handling.js"></script>
+  <script src="assets/js/offcanvas.js"></script>
+
+  <script>
+
+    // testimonial slider
+    if (('.testimonial-slider').length) {
+      var testimonial_slider = new Swiper(".testimonial-slider", {
+        loop: false,
+        slidesPerView: 1,
+        spaceBetween: 60,
+        speed: 1800,
+        watchSlidesProgress: true,
+        navigation: {
+          prevEl: ".testimonial-button-prev",
+          nextEl: ".testimonial-button-next",
+        },
+      });
+    }
+
+
+    // client slider 
+    if ('.client-slider-active') {
+      var client_slider_active = new Swiper(".client-slider-active", {
+        slidesPerView: 'auto',
+        loop: true,
+        autoplay: true,
+        spaceBetween: 130,
+        speed: 3000,
+        autoplay: {
+          delay: 1,
+        },
+      });
+    }
+
+  </script>
+
+</body>
+
+</html>

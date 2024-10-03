@@ -1,0 +1,181 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block css %}
+    
+{% endblock css %}
+    
+
+
+{% block body %}
+
+<main>
+
+  <!-- featured area start  -->
+  <section class="featured-area">
+    <div class="container">
+      <div class="featured-area-inner">
+        <div class="section-content">
+          <div class="section-title-wrapper">
+            <div class="title-wrapper">
+              <h1 class="section-title large has_fade_anim">We always
+                think</h1>
+            </div>
+          </div>
+          <div class="text-box">
+            <div class="text-wrapper">
+              <p class="text has_fade_anim">Add the best talent on the market, an agile skilled management &
+                seamless
+                involvement</p>
+            </div>
+            <div class="counter-box has_fade_anim">
+              <div class="counter-item">
+                <span class="number wc-counter">4,00 +</span>
+                <p class="text">Total post</p>
+              </div>
+              <div class="counter-item">
+                <span class="number wc-counter">99 +</span>
+                <p class="text">Blog writer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- featured area end  -->
+
+  <div class="featured-post-area">
+    <div class="container">
+      <div class="featured-post-box">
+        <div class="featured-posts">
+          <article class="blog-box has_fade_anim">
+            <a href="blog-details.html">
+              <div class="thumb">
+                <img src="{% static 'imgs/blog/img-s-17.webp' %}" alt="blog image">
+              </div>
+              <div class="content">
+                <div class="content-first">
+                  <h2 class="title">Insights from Industry Leaders</h2>
+                  <span class="tag">Features Post <br>
+                    Mar - 2024</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="blog-box has_fade_anim" data-delay="0.30">
+            <a href="blog-details.html">
+              <div class="thumb">
+                <img src="{% static 'imgs/blog/img-s-18.webp' %}" alt="blog image">
+              </div>
+              <div class="content">
+                <div class="content-first">
+                  <h2 class="title">Building quality</h2>
+                  <span class="tag">Features Post <br>
+                    Feb - 2024</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="blog-box has_fade_anim" data-delay="0.45" data-on-scroll="0">
+            <a href="blog-details.html">
+              <div class="thumb">
+                <img src="{% static 'imgs/blog/img-s-19.webp' %}" alt="blog image">
+              </div>
+              <div class="content">
+                <div class="content-first">
+                  <h2 class="title">Market research</h2>
+                  <span class="tag">Features Post <br>
+                    Jan - 2024</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- blog area start  -->
+  <section class="blog-area">
+    <div class="container">
+      <div class="blog-area-inner section-spacing">
+        <div class="section-content">
+          <div class="section-title-wrapper">
+            <div class="title-wrapper">
+              <h2 class="section-title has_fade_anim">Latest
+                insight the
+                arolax!</h2>
+            </div>
+          </div>
+          <div class="text-wrapper">
+            <p class="text has_fade_anim">Add the best talent on the market, an agile skilled management &
+              seamless
+              involvement</p>
+          </div>
+        </div>
+        <div class="blogs-wrapper-box">
+          <div class="blogs-wrapper has_fade_anim">
+            {% for ie in data  %}
+            <a href="{% url 'home:blogsd' ie.slug %}">
+              <div class="blog-box">
+                <div class="thumb">
+                  <img src="{{ie.image.url}}" alt="image">
+                </div>
+                <div class="content">
+                  <span class="number">{{ie.published}}</span>
+                  <h3 class="title">{{ie.h1}}</h3>
+                  <span class="icon"><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+              </div>
+            </a>
+            {% endfor %}
+            
+            
+          </div>
+          <div class="pagination-box has_fade_anim">
+            <ul class="pagination">
+              <li>
+                <a href="#">01</a>
+              </li>
+              <li>
+                <a href="#">02</a>
+              </li>
+              <li>
+                <a href="#">03</a>
+              </li>
+              <li>
+                <a href="#">04</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- blog area end  -->
+
+</main>
+    
+{% endblock body %}
+    
+
+
+{% block js %}
+    
+{% endblock js %}
+    
