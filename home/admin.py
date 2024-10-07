@@ -7,6 +7,7 @@ admin.site.register(Tags)
 admin.site.register(Author)
 
 admin.site.register(Blog)
+admin.site.register(Solution)
 
 class ContactAdmin(admin.ModelAdmin):
     list_display = ('name', 'email', 'number', 'message')  # Display these fields in the admin list view

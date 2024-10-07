@@ -49,3 +49,18 @@ def blogsd(request, pk):
     }
 
     return render(request, 'blog-details.html', context)
+
+def service(request):
+    context = {
+        
+    }
+    return render(request, 'service.html', context)
+
+def service_detail(request, pk):
+    data = Solution.objects.get(slug=pk)
+    data2 = Solution.objects.all().order_by('sl_no')
+    context = {
+        'data':data,
+        'data2':data2,
+    }
+    return render(request, 'service_detail.html', context)
