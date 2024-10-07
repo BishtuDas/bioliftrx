@@ -14,10 +14,15 @@
   <link rel="icon" type="image/x-icon" href="{% static 'imgs/logo/favicon.png' %}">
 
 
+  {% block header %}
 
+  {% endblock header %}
 
 
   <!-- All CSS files -->
+ 
+
+
   <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
   <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
   <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}">
@@ -25,7 +30,16 @@
   <link rel="stylesheet" href="{% static 'css/meanmenu.min.css' %}">
   <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
   <link rel="stylesheet" href="{% static 'css/master-ai-agency.css' %}">
+  
+  
 
+
+{% block css %}
+    
+{% endblock css %}
+
+
+ 
 
 </head>
 
@@ -38,11 +52,13 @@
       <div class="animation-preloader">
         <div class="spinner"></div>
         <div class="txt-loading">
-          <span data-text="A" class="characters">A</span>
-          <span data-text="R" class="characters">R</span>
+          <span data-text="A" class="characters">B</span>
+          <span data-text="R" class="characters">I</span>
           <span data-text="O" class="characters">O</span>
           <span data-text="L" class="characters">L</span>
-          <span data-text="A" class="characters">A</span>
+          <span data-text="A" class="characters">F</span>
+          <span data-text="X" class="characters">T</span>
+          <span data-text="A" class="characters">R</span>
           <span data-text="X" class="characters">X</span>
         </div>
       </div>
@@ -196,78 +212,11 @@
         <div class="header__nav pos-center">
           <nav class="main-menu">
             <ul>
-              <li class="menu-item-has-children">
-                <a href="#">Demos</a>
-                <ul class="dp-menu col-2">
-                  <li><a href="branding-agency.html">Branding Agency</a></li>
-                  <li><a href="web-agency.html">Web Agency</a></li>
-                  <li><a href="seo-agency.html">SEO Agency</a></li>
-                  <li><a href="design-studio.html">Design Agency</a></li>
-                  <li><a href="video-production.html">Video Agency</a></li>
-                  <li><a href="ai-agency.html">AI Agency</a></li>
-                  <li><a href="creative-agency-classic.html">Creative Agency Classic</a></li>
-                  <li><a href="marketing-agency.html">Marketing Agency</a></li>
-                  <li><a href="corporate-agency.html">Corporate Agency</a></li>
-                  <li><a href="startup-agency.html">Startup Agency</a></li>
-                  <li><a href="modern-agency.html">Modern Agency</a></li>
-                  <li><a href="photography-studio.html">Photography Agency</a></li>
-                  <li><a href="creative-agency.html">Creative Agency</a></li>
-                  <li><a href="digital-agency.html">Digital Agency</a></li>
-                </ul>
-              </li>
-              <li><a href="about.html">about</a></li>
-              <li class="menu-item-has-children">
-                <a href="#">portfolio</a>
-                <ul class="dp-menu">
-                  <li><a href="portfolio-carousel.html">Portfolio Carousel</a></li>
-                  <li><a href="portfolio-material.html">Portfolio Material</a></li>
-                  <li><a href="portfolio-slicer.html">Portfolio Slicer</a></li>
-                  <li><a href="portfolio-spring.html">Portfolio Spring</a></li>
-                </ul>
-              </li>
-              <li class="menu-item-has-children">
-                <a href="#">Pages</a>
-                <ul class="dp-menu">
-                  <li class="menu-item-has-children">
-                    <a href="#">service pages</a>
-                    <ul>
-                      <li><a href="services.html">services</a></li>
-                      <li><a href="service-details.html">service details</a></li>
-                    </ul>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="#">project pages</a>
-                    <ul>
-                      <li><a href="works.html">project</a></li>
-                      <li><a href="work-details.html">project details</a></li>
-                    </ul>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="#">team pages</a>
-                    <ul>
-                      <li><a href="team.html">team</a></li>
-                      <li><a href="team-details.html">team details</a></li>
-                    </ul>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="#">career pages</a>
-                    <ul>
-                      <li><a href="career.html">career</a></li>
-                      <li><a href="career-details.html">career details</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="faq.html">faq</a></li>
-                  <li><a href="404.html">404 page</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">blog</a>
-                <ul class="dp-menu">
-                  <li><a href="blog.html">blog</a></li>
-                  <li><a href="blog-details.html">blog details</a></li>
-                </ul>
-              </li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="{% url 'home:home' %}">Home</a></li>
+              <li><a href="contact.html">About</a></li>
+              <li><a href="{% url 'home:service' %}">Services</a></li>
+              <li><a href="{% url 'home:contact' %}">Contact</a></li>
+              
             </ul>
           </nav>
         </div>
@@ -290,7 +239,7 @@
 
 
        <!-- footer area start  -->
-       <div class="container large">
+<div class="container large">
         <footer class="footer-area">
           <div class="container">
             <div class="footer-area-inner">
@@ -352,126 +301,67 @@
               </div>
             </div>
           </div>
-        </footer>
-      </div>
+</footer>
+</div>
       <!-- footer area end  -->
 
-    </div>
-  </div>
-</div>
+   
 
 
 
-<!-- All JS files -->
-<script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
-<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
-<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
-<script src="{% static 'js/swiper-bundle.min.js' %}"></script>
-<script src="{% static 'js/counter.js' %}"></script>
-<script src="{% static 'js/progressbar.js' %}"></script>
-<script src="{% static 'js/gsap.min.js' %}"></script>
-<script src="{% static 'js/ScrollSmoother.min.js' %}"></script>
-<script src="{% static 'js/ScrollToPlugin.min.js' %}"></script>
-<script src="{% static 'js/ScrollTrigger.min.js' %}"></script>
-<script src="{% static 'js/SplitText.min.js' %}"></script>
-<script src="{% static 'js/jquery.meanmenu.min.js' %}"></script>
-<script src="{% static 'js/backToTop.js' %}"></script>
-<script src="{% static 'js/main.js' %}"></script>
-<script src="{% static 'js/error-handling.js' %}"></script>
-<script src="{% static 'js/offcanvas.js' %}"></script>
 
-<script>
 
-  // client slider 
-  if ('.client-slider-active') {
-    var client_slider_active = new Swiper(".client-slider-active", {
-      slidesPerView: 'auto',
-      loop: true,
-      autoplay: true,
-      spaceBetween: 110,
-      speed: 3000,
-      autoplay: {
-        delay: 1,
-      },
-    });
-  }
+  <!-- All JS files -->
+  <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'js/counter.js' %}"></script>
+  <script src="{% static 'js/progressbar.js' %}"></script>
+  <script src="{% static 'js/gsap.min.js' %}"></script>
+  <script src="{% static 'js/ScrollSmoother.min.js' %}"></script>
+  <script src="{% static 'js/ScrollToPlugin.min.js' %}"></script>
+  <script src="{% static 'js/ScrollTrigger.min.js' %}"></script>
+  <script src="{% static 'js/SplitText.min.js' %}"></script>
+  <script src="{% static 'js/jquery.meanmenu.min.js' %}"></script>
+  <script src="{% static 'js/backToTop.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+  <script src="{% static 'js/error-handling.js' %}"></script>
+  <script src="{% static 'js/offcanvas.js' %}"></script>
 
-  // project slider
-  if (('.project-slider').length) {
-    var project_slider = new Swiper(".project-slider", {
-      loop: false,
-      slidesPerView: 1,
-      spaceBetween: 40,
-      speed: 1800,
-      watchSlidesProgress: true,
-      navigation: {
-        prevEl: ".project-button-prev",
-        nextEl: ".project-button-next",
-      },
-      pagination: {
-        el: '.project-pagination',
-        type: 'bullets',
-        clickable: true
-      },
-      breakpoints: {
-        // when window width is >= px
-        576: {
-          slidesPerView: 1,
+  <script>
+
+    // testimonial slider
+    if (('.testimonial-slider').length) {
+      var testimonial_slider = new Swiper(".testimonial-slider", {
+        loop: false,
+        slidesPerView: 1,
+        spaceBetween: 60,
+        speed: 1800,
+        watchSlidesProgress: true,
+        navigation: {
+          prevEl: ".testimonial-button-prev",
+          nextEl: ".testimonial-button-next",
         },
-        768: {
-          slidesPerView: 2,
+      });
+    }
+
+
+    // client slider 
+    if ('.client-slider-active') {
+      var client_slider_active = new Swiper(".client-slider-active", {
+        slidesPerView: 'auto',
+        loop: true,
+        autoplay: true,
+        spaceBetween: 130,
+        speed: 3000,
+        autoplay: {
+          delay: 1,
         },
-        992: {
-          slidesPerView: 3,
-        },
-        1201: {
-          slidesPerView: 3,
-        },
-        1367: {
-          slidesPerView: 4,
-        },
-      }
-    });
-  }
+      });
+    }
 
-
-  // testimonial slider
-  if (('.testimonial-slider').length) {
-    var testimonial_slider = new Swiper(".testimonial-slider", {
-      loop: false,
-      slidesPerView: 1,
-      spaceBetween: 60,
-      speed: 1800,
-      watchSlidesProgress: true,
-      navigation: {
-        prevEl: ".testimonial-button-prev",
-        nextEl: ".testimonial-button-next",
-      },
-    });
-  }
-
-
-  // text slider 
-  if ('.text-slider-active') {
-    var text_slider_active = new Swiper(".text-slider-active", {
-      slidesPerView: 'auto',
-      loop: true,
-      autoplay: true,
-      spaceBetween: 30,
-      speed: 10000,
-      autoplay: {
-        delay: 1,
-      },
-    });
-  }
-
-</script>
-
-
-{% block js %}
-    
-{% endblock js %}
-    
+  </script>
 
 </body>
 
