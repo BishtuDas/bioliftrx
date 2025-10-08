@@ -18,34 +18,40 @@
     <!-- hero area start  -->
     <div class="container large">
       <section class="hero-area">
-        <div class="container">
-          <div class="hero-area-inner">
-            <div class="shape-1">
-              <img class="show-light" src="{% static 'imgs/shape/img-s-74.webp' %}" alt="image">
-              <img class="show-dark" src="{% static 'imgs/shape/img-s-74-light.webp' %}" alt="image">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+          <div class="hero-area-inner" style="display: flex; align-items: center;">
+            <div class="shape-1" style="flex: 1;">
+              <img class="show-light" src="{% static 'imgs/shape/img-s-74.webp' %}" alt="image" style="max-width: 100%; height: auto;">
+              <img class="show-dark" src="{% static 'imgs/shape/img-s-74-light.webp' %}" alt="image" style="max-width: 100%; height: auto;">
             </div>
-            <div class="section-header">
-              <div class="customer-wrapper-box">
-                <div class="customer-wrapper">
-                  <div class="thumb img_anim_reveal">
-                    <img class="show-light" src="{% static 'imgs/client/img-s-3.webp' %}" alt="image">
-                    <img class="show-dark" src="{% static 'imgs/client/img-s-3-light.webp' %}" alt="image">
+            <div class="section-header" style="flex: 2; display: flex; align-items: center;">
+              <div class="customer-wrapper-box" style="margin-right: 20px;">
+                <div class="customer-wrapper" style="display: flex; align-items: center;">
+                  <div class="thumb img_anim_reveal" style="margin-right: 10px;">
+                    <img class="show-light" src="{% static 'imgs/client/img-s-3.webp' %}" alt="image" style="max-width: 100%; height: auto;">
+                    <img class="show-dark" src="{% static 'imgs/client/img-s-3-light.webp' %}" alt="image" style="max-width: 100%; height: auto;">
                   </div>
-                  <p class="text has_fade_anim" data-fade-from="left"><span class="text-underline">We have
-                      18k+</span> customers <br>
-                    word-wide</p>
+                  <p class="text has_fade_anim" data-fade-from="left" style="margin: 0;">
+                    <span class="text-underline">We have 18k+</span> customers <br> word-wide
+                  </p>
                 </div>
               </div>
               <div class="section-title-wrapper">
                 <div class="title-wrapper">
-                  <h1 class="section-title has_fade_anim" data-fade-from="left" data-duration="0.75" data-delay="0.30">Unlock the ultimate
-                    power of AI, in your
-                    real life</h1>
+                  <h1 class="section-title has_fade_anim" data-fade-from="left" data-duration="0.75" data-delay="0.30" style="font-size: 2em; margin: 0;">
+                    Lose weight fast with Semaglutide, delivered overnight.
+                  </h1>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        
+          </div>
+        </div>
+
+
+        
         <div class="section-content">
           <div class="info-box">
             <div class="thumb has_fade_anim" data-fade-from="left" data-duration="0.75" data-delay="0.60">
@@ -82,7 +88,134 @@
       </section>
     </div>
     <!-- hero area end  -->
+ <!-- clients area start  -->
 
+ <div class="clients-area">
+  <div class="container">
+    <div class="clients-area-inner">
+      <div class="section-header">
+        <div class="section-title-wrapper">
+          <div class="title-wrapper">
+            <h2 class="section-title has_word_anim">We worked with the world’s best companies</h2>
+          </div>
+        </div>
+      </div>
+      <div class="client-slider has_fade_anim">
+        <div class="swiper client-slider-active">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="client-box">
+                <img class="show-light" src="assets/imgs/brand/img-s-13.webp" alt="client image">
+                <img class="show-dark" src="assets/imgs/brand/img-s-13-light.webp" alt="client image">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client-box">
+                <img class="show-light" src="assets/imgs/brand/img-s-14.webp" alt="client image">
+                <img class="show-dark" src="assets/imgs/brand/img-s-14-light.webp" alt="client image">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client-box">
+                <img class="show-light" src="assets/imgs/brand/img-s-15.webp" alt="client image">
+                <img class="show-dark" src="assets/imgs/brand/img-s-15-light.webp" alt="client image">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client-box">
+                <img class="show-light" src="assets/imgs/brand/img-s-16.webp" alt="client image">
+                <img class="show-dark" src="assets/imgs/brand/img-s-16-light.webp" alt="client image">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client-box">
+                <img class="show-light" src="assets/imgs/brand/img-s-17.webp" alt="client image">
+                <img class="show-dark" src="assets/imgs/brand/img-s-17-light.webp" alt="client image">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client-box">
+                <img class="show-light" src="assets/imgs/brand/img-s-18.webp" alt="client image">
+                <img class="show-dark" src="assets/imgs/brand/img-s-18-light.webp" alt="client image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- clients area end  -->
+
+
+ <!-- features area start  -->
+ <section class="features-area">
+  <div class="container">
+    <div class="features-area-inner section-spacing-top">
+      <div class="section-header">
+        <div class="section-title-wrapper">
+          <div class="title-wrapper">
+            <h2 class="section-title has_text_move_anim">We build strong <span>productive</span> market that
+              increase your
+              sales growth</h2>
+          </div>
+        </div>
+        <div class="text-wrapper">
+          <p class="text has_fade_anim">We bet on brands that shift categories and add value to people's
+            lives; and on
+            founders who are motivated to shape </p>
+        </div>
+      </div>
+      <div class="features-wrapper-box">
+        <div class="features-wrapper">
+          <div class="feature-box has_fade_anim" data-fade-from="bottom">
+            <div class="thumb">
+              <img class="show-light" src="assets/imgs/icon/icon-s-20.webp" alt="feature icon">
+              <img class="show-dark" src="assets/imgs/icon/icon-s-20-light.webp" alt="feature icon">
+            </div>
+            <div class="content">
+              <h3 class="title">Productivity</h3>
+              <p class="text">Giving consultancy for every financial projection report and analysis.</p>
+            </div>
+          </div>
+          <div class="feature-box has_fade_anim" data-fade-from="bottom">
+            <div class="thumb">
+              <img class="show-light" src="assets/imgs/icon/icon-s-20.webp" alt="feature icon">
+              <img class="show-dark" src="assets/imgs/icon/icon-s-20-light.webp" alt="feature icon">
+            </div>
+            <div class="content">
+              <h3 class="title">Strategy</h3>
+              <p class="text">Experiences your customers for more information about services.</p>
+            </div>
+          </div>
+          <div class="feature-box has_fade_anim" data-fade-from="bottom">
+            <div class="thumb">
+              <img class="show-light" src="assets/imgs/icon/icon-s-20.webp" alt="feature icon">
+              <img class="show-dark" src="assets/imgs/icon/icon-s-20-light.webp" alt="feature icon">
+            </div>
+            <div class="content">
+              <h3 class="title">Research</h3>
+              <p class="text">The most completed powerful experience automation with built-in type.</p>
+            </div>
+          </div>
+          <div class="feature-box has_fade_anim" data-fade-from="bottom">
+            <div class="thumb">
+              <img class="show-light" src="assets/imgs/icon/icon-s-20.webp" alt="feature icon">
+              <img class="show-dark" src="assets/imgs/icon/icon-s-20-light.webp" alt="feature icon">
+            </div>
+            <div class="content">
+              <h3 class="title">Community</h3>
+              <p class="text">Our quality policy: strict and effective management to have best band for you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- features area end  -->
     <!-- about area start  -->
     <section class="about-area">
       <div class="container">
@@ -97,28 +230,104 @@
               </div>
             </div>
             <div class="content-last">
-              <div class="text-wrapper">
-                <p class="text has_text_move_anim" data-delay="0.30">Artificial Intelligence refers to the
-                  development of computer systems that can
-                  perform tasks that would typically require human intelligence. It involves the creation of
-                  algorithms and models that enable machines to learn, reason, perceive, and make decisions.</p>
-                <p class="text has_text_move_anim" data-delay="0.30">There are generally two types of AI: Narrow
-                  or Weak AI, which is designed to
-                  perform
-                  specific
-                  tasks, and General or Strong AI, which possesses human-level intelligence and can handle a wide
-                  range of tasks.</p>
+              <!-- Top Text Section -->
+              
+            
+              <!-- Middle Button Section -->
+              
+            
+              <!-- FAQ Section -->
+              <div class="accordion-wrapper has_fade_anim" data-fade-from="bottom">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <!-- FAQ 1 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Sparking innovation
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        Brand identity design is the key to where Arolax Agency has taken my entire soul, like on these sweet mornings.
+                      </div>
+                    </div>
+                  </div>
+            
+                  <!-- FAQ 2 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Turning creative ideas into results
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        Brand identity design is the key to where Arolax Agency has taken my entire soul, like on these sweet mornings.
+                      </div>
+                    </div>
+                  </div>
+            
+                  <!-- FAQ 3 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Turnkey premium materials
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        Brand identity design is the key to where Arolax Agency has taken my entire soul, like on these sweet mornings.
+                      </div>
+                    </div>
+                  </div>
+            
+                  <!-- FAQ 4 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        Smart artificial trader
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        Brand identity design is the key to where Arolax Agency has taken my entire soul, like on these sweet mornings.
+                      </div>
+                    </div>
+                  </div>
+            
+                  <!-- FAQ 5 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        Checking out AI-made brand vibe
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        Brand identity design is the key to where Arolax Agency has taken my entire soul, like on these sweet mornings.
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="btn-wrapper has_fade_anim" data-fade-from="top" data-fade-offset="70" data-ease="bounce">
-                <a href="about.html" class="wc-btn wc-btn-primary btn-text-flip bordered"> <span data-text="Learn more">Learn
-                    more</span><i class="fa-solid fa-play"></i></a>
+            
+              <!-- Bottom Button Section -->
+              <div class="btn-wrapper has_fade_anim" data-fade-from="bottom" data-fade-offset="50">
+                <a href="about.html" class="wc-btn wc-btn-primary btn-text-flip bordered">
+                  <span data-text="Learn more">Learn more</span><i class="fa-solid fa-play"></i>
+                </a>
               </div>
             </div>
+            
+            
           </div>
         </div>
       </div>
     </section>
     <!-- about area end  -->
+
+
+  
 
     <!-- info area start  -->
     <section class="info-area">
@@ -187,9 +396,7 @@
             <div class="section-header">
               <div class="section-title-wrapper">
                 <div class="title-wrapper">
-                  <h2 class="section-title has_text_move_anim">Using local server is a fundamental
-                    component of Artificial Intelligence
-                    (AI) systems</h2>
+                  <h2 class="section-title has_text_move_anim">Follow These 3 Steps</h2>
                 </div>
               </div>
             </div>
@@ -214,9 +421,8 @@
                       <img src="{% static 'imgs/shape/img-s-79.webp' %}" alt="feature icon">
                     </div>
                     <div class="content">
-                      <h3 class="title">Powerful key features</h3>
-                      <p class="text">It involves the creation of algorithms and models that enable machines to
-                        learn, reason, perceive, and make decisions.</p>
+                      <h3 class="title">1.Complete Online Patient Forms</h3>
+                      <p class="text">Add your medical history to ensure treatment is suitable.</p>
                     </div>
                   </div>
                   <div class="feature-box has_fade_anim" data-fade-from="left" data-fade-offset="70">
@@ -224,9 +430,8 @@
                       <img src="{% static 'imgs/shape/img-s-80.webp' %}" alt="feature icon">
                     </div>
                     <div class="content">
-                      <h3 class="title">Conversion-focused idea </h3>
-                      <p class="text">It involves the creation of algorithms and models that enable machines to
-                        learn, reason, perceive, and make decisions.</p>
+                      <h3 class="title">2.Telehealth Consultation</h3>
+                      <p class="text">Connect with a U.S. based healthcare provider.</p>
                     </div>
                   </div>
                   <div class="feature-box has_fade_anim" data-fade-from="left" data-fade-offset="70">
@@ -234,9 +439,8 @@
                       <img src="{% static 'imgs/shape/img-s-81.webp' %}" alt="feature icon">
                     </div>
                     <div class="content">
-                      <h3 class="title">Technical support</h3>
-                      <p class="text">It involves the creation of algorithms and models that enable machines to
-                        learn, reason, perceive, and make decisions.</p>
+                      <h3 class="title">3. Medication Delivery</h3>
+                      <p class="text">Your prescription will be delivered within 3-4 days eliminating the need to leave home or travel to a pharmacy.</p>
                     </div>
                   </div>
                 </div>
